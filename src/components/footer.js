@@ -3,7 +3,9 @@ import React from "react"
 const Footer = () => {
   return (
     <footer>
-      <h1>this is the footer</h1>
+      <p>Custom Built with Gatsby</p>
+      <p>Link to GitHub Repo</p>
+      <p>Caleb Lovell &copy; 2019</p>
     </footer>
   )
 }

@@ -1,0 +1,14 @@
+a {
+  &:link {
+    color: orangered;
+  }
+  &:visited {
+    color: orangered;
+  }
+  &:hover {
+    color: orange;
+  }
+  &:active {
+    color: yellow;
+  }
+}

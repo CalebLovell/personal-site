@@ -6,8 +6,8 @@ import "../styles/styles.scss"
 const Layout = props => {
   return (
     <div>
-      <Header />
       {props.children}
+      <Header />
       <Footer />
     </div>
   )
