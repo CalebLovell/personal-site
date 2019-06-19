@@ -1,0 +1,15 @@
+button {
+  height: 50px;
+  width: 200px;
+  background: none;
+  color: $clr-white;
+  font-family: $font-base;
+  font-size: $font-size-med;
+  border: 3px solid $clr-white;
+  box-sizing: border-box;
+  transition: .3s;
+  &:hover {
+    background-color: $clr-accent;
+    border-color: $clr-accent;
+  }
+}
