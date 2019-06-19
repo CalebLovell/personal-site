@@ -4,7 +4,7 @@ import Layout from "../components/layout"
 import Header from "../components/header"
 import Home from "../components/home"
 import About from "../components/about"
-import Projects from "../components/projects"
+import Portfolio from "../components/portfolio";
 import Contact from "../components/contact"
 
 
@@ -15,7 +15,7 @@ const IndexPage = () => {
         <Home />
         <Header />
         <About />
-        <Projects />
+        <Portfolio />
         <Contact />
       </main>
     </Layout>

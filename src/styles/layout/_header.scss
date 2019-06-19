@@ -1,12 +1,12 @@
 header {
-  height: 50px;
+  height: $header-height;
   width: 100%;
   display: flex;
   justify-content: center;
   background-color: $clr-bg;
-  color: $clr-white;
   position: sticky;
   top: 0;
+  border-top: 1px solid $clr-bg-light;
   nav {
     height: 100%;
     width: 35%;

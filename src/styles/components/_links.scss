@@ -1,12 +1,13 @@
 a {
+  font-weight: bold;
   &:link {
-    color: orangered;
+    color: $clr-accent;
   }
   &:visited {
-    color: orangered;
+    color: $clr-accent;
   }
   &:hover {
-    color: orange;
+    color: #8491B8;
   }
   &:active {
     color: yellow;

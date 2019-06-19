@@ -1,0 +1,8 @@
+.contact {
+  height: calc(100vh - #{$header-height});
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $clr-white;
+}
