@@ -3,10 +3,10 @@ header {
   width: 100%;
   display: flex;
   justify-content: center;
-  background-color: $clr-bg;
+  background-color:	#0A0D14;
   position: sticky;
   top: 0;
-  border-top: 1px solid $clr-bg-light;
+  z-index: 2;
   nav {
     height: 100%;
     width: 35%;
