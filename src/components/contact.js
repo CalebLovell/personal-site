@@ -3,14 +3,11 @@ import React from "react"
 const Contact = () => {
   return (
     <section className="contact">
-      <h1>contact view goes here</h1>
-      <form
-        name="contact"
-        method="post"
-        data-netlify="true"
-        data-netlify-honeypot="bot-field"
-      >
-        <input name="name" placeholder="Your Name" type="text"></input>
+      <form name="contact" method="post" data-netlify="true">
+        <input type="text" name="name" placeholder="Name" ></input>
+        <input type="text" name="email" placeholder="Email" ></input>
+        <textarea name="message" placeholder="Message" rows="7"></textarea>
+        <div data-netlify-recaptcha="true"></div>
         <button>Send</button>
       </form>
     </section>
