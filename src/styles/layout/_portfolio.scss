@@ -12,6 +12,7 @@
   width: 100%;
   background-color: rgba(0, 0, 0, 0.8);
   position: absolute;
+  z-index: 100;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -48,11 +49,11 @@
   }
   .forward {
     bottom: 0;
-    left: 0;
+    right: 0;
   }
   .backward {
     bottom: 0;
-    right: 0;
+    left: 0;
   }
 }
 
@@ -90,10 +91,11 @@
     font-family: $font-base;
     font-size: $font-size-small;
     box-sizing: border-box;
-    transition: 0.3s;
     &:hover {
-      color: $clr-accent;
       background-color: $clr-white;
+      a {
+        color: $clr-accent;
+      }
     }
     &:focus {
       outline: 0;
@@ -102,21 +104,69 @@
       text-decoration: none;
       color: $clr-white;
       font-weight: bold;
-      &:link {
-        color: $clr-accent;
-      }
-      &:visited {
-        color: $clr-accent;
-      }
-      &:hover {
-        color: $clr-accent;
-      }
-      &:active {
-        color: $clr-accent;
-      }
     }
   }
   svg {
     cursor: pointer;
+  }
+}
+
+.card {
+  width: 600px;
+  height: 281px;
+  position: relative;
+  background: white;
+  img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    opacity: 1;
+  }
+  div {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    bottom: 81%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    opacity: 0;
+    color: $clr-black;
+    font-family: $font-base;
+    font-size: $font-size-med;
+  }
+  button {
+    position: absolute;
+    top: 81%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    opacity: 0;
+    color: $clr-black;
+    font-family: $font-base;
+    font-size: $font-size-med;
+  }
+}
+
+.project-active1,
+.project-active2 {
+  img {
+    transition: 1s;
+    opacity: 0;
+  }
+  div {
+    bottom: 40%;
+    transition: 1s;
+    opacity: 1;
+  }
+  button {
+    top: 40%;
+    transition: 1s;
+    opacity: 1;
   }
 }

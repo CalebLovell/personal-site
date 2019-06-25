@@ -5,17 +5,36 @@ import {
   faArrowRight,
   faArrowLeft,
 } from "@fortawesome/free-solid-svg-icons"
-import project1 from "../../static/project-screenshots/usacountyexplorer.com.png"
-import project2 from "../../static/project-screenshots/lyricslog-home-view.png"
+import usacountyexplorerHome from "../../static/project-screenshots/usacountyexplorer.com.png"
+import usacountyexplorerFavs from "../../static/project-screenshots/usacountyexplorer-favorites-view.png"
 
-const images = [project1, project2]
+import lyricslogHome from "../../static/project-screenshots/lyricslog-home-view.png"
+import lyricslogSong from "../../static/project-screenshots/lyricslog-song-view.png"
+import lyricslogLogin from "../../static/project-screenshots/lyricslog-login-view.png"
+import lyricslogProfile from "../../static/project-screenshots/lyricslog-profile-view.png"
+import lyricslogAdd from "../../static/project-screenshots/lyricslog-add-view.png"
+
+const usaCountyExplorerImages = [usacountyexplorerHome, usacountyexplorerFavs]
+const lyricsLogImages = [
+  lyricslogHome,
+  lyricslogSong,
+  lyricslogLogin,
+  lyricslogProfile,
+  lyricslogAdd,
+]
 
 const Portfolio = () => {
-  let [show, setShow] = useState(`none`)
-  let [currentImageIndex, setCurrentImageIndex] = useState(0)
+  const [show, setShow] = useState(`none`)
+  const [carousel, setCarousel] = useState([])
+  const [currentImageIndex, setCurrentImageIndex] = useState(0)
+  const [title, setTitle] = useState(``)
+  const [description, setDescription] = useState(``)
+  const [link, setLink] = useState(``)
+  const [projectActiveClass1, setProjectActiveClass1] = useState(``)
+  const [projectActiveClass2, setProjectActiveClass2] = useState(``)
 
   const increaseImageIndex = () => {
-    if (currentImageIndex === images.length - 1) {
+    if (currentImageIndex === carousel.length - 1) {
       setCurrentImageIndex(0)
     } else {
       setCurrentImageIndex(currentImageIndex + 1)
@@ -23,7 +42,7 @@ const Portfolio = () => {
   }
   const decreaseImageIndex = () => {
     if (currentImageIndex === 0) {
-      setCurrentImageIndex((currentImageIndex = images.length - 1))
+      setCurrentImageIndex(carousel.length - 1)
     } else {
       setCurrentImageIndex(currentImageIndex - 1)
     }
@@ -39,31 +58,36 @@ const Portfolio = () => {
       >
         <div className="modal">
           <div className="slider-container">
-            <img src={images[currentImageIndex]} alt="project-views" />
-            <button className="forward" onClick={() => increaseImageIndex()}>
+            <img src={carousel[currentImageIndex]} alt="project-image" />
+            <button
+              className="backward"
+              onClick={() => {
+                decreaseImageIndex()
+              }}
+            >
               <FontAwesomeIcon icon={faArrowLeft} />
             </button>
-            <button className="backward" onClick={() => decreaseImageIndex()}>
+            <button
+              className="forward"
+              onClick={() => {
+                increaseImageIndex()
+              }}
+            >
               <FontAwesomeIcon icon={faArrowRight} />
             </button>
           </div>
           <div className="slider-description">
             <div>
-              <h3>USA County Explorer</h3>
+              <h3>{title}</h3>
             </div>
             <div>
-              <p>
-                Site for people to explore US counties and visualize where they
-                might enjoy living. Counties can be clicked to display
-                information, and the sliders can be adjusted or toggled to
-                re-shade the map according to the user's desires. Dark counties
-                most closely represent the user's interests, and light counties
-                least represent them.
-              </p>
+              <p>{description}</p>
             </div>
             <div className="slider-description-bottom">
               <button>
-                <a href="https://usacountyexplorer.com/">View Live Site</a>
+                <a href={`${link}`} target="_blank">
+                  View Live Site
+                </a>
               </button>
               <FontAwesomeIcon icon={faTimes} onClick={() => setShow(`none`)} />
             </div>
@@ -71,17 +95,65 @@ const Portfolio = () => {
         </div>
       </div>
       <h1>Projects</h1>
-      <div className="card-container">
-        <div className="card">
-          <img src={project1} alt="website project preview"></img>
+      <div
+        className="card-container"
+        onMouseEnter={() => setProjectActiveClass1(`project-active1`)}
+        onMouseLeave={() => setProjectActiveClass1(``)}
+      >
+        <div className={`card ${projectActiveClass1}`}>
+          <img
+            src={usacountyexplorerHome}
+            alt="USA County Explorer Home Page"
+          ></img>
+          <div>
+            <h1>USA County Explorer</h1>
+            <h2>Tech Used</h2>
+          </div>
+          <button
+            onClick={() => {
+              setCurrentImageIndex(0)
+              setCarousel(usaCountyExplorerImages)
+              setTitle(`USA County Explorer`)
+              setDescription(`Site for people to explore US counties and visualize where they
+            might enjoy living. Counties can be clicked to display
+            information, and the sliders can be adjusted or toggled to
+            re-shade the map according to the user's desires. Dark counties
+            most closely represent the user's interests, and light counties
+            least represent them.`)
+              setLink(`https://usacountyexplorer.com/`)
+              setShow(`flex`)
+            }}
+          >
+            View More
+          </button>
         </div>
-        <button onClick={() => setShow(`flex`)}>View More</button>
       </div>
-      <div className="card-container">
-        <div className="card">
-          <img src={project2} alt="website project preview"></img>
+      <div
+        className="card-container"
+        onMouseEnter={() => setProjectActiveClass2(`project-active2`)}
+        onMouseLeave={() => setProjectActiveClass2(``)}
+      >
+        <div className={`card ${projectActiveClass2}`}>
+          <img src={lyricslogHome} alt="LyricsLog Home Page"></img>
+          <div>
+            <h1>LyricsLog</h1>
+            <h2>Tech Used</h2>
+          </div>
+          <button
+            onClick={() => {
+              setCurrentImageIndex(0)
+              setCarousel(lyricsLogImages)
+              setTitle(`Lyrics Log`)
+              setDescription(
+                `Site for creating and viewing user submitted translations for song lyrics with the option to add explanations for each line. Users can create their own songs and translations or simply view those submitted by others. The song view allows users to scroll over each line from a song's lyrics to highlight the original lyrics, translated lyrics and a box containing any explanations.`
+              )
+              setLink(`https://lyricslog.dev/`)
+              setShow(`flex`)
+            }}
+          >
+            View More
+          </button>
         </div>
-        <button>View More</button>
       </div>
     </section>
   )
