@@ -26,6 +26,34 @@
   width: 100%;
   height: calc(281px * 1.3);
   background-color: red;
+  position: relative;
+  img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+  button {
+    position: absolute;
+    height: 10%;
+    width: 5%;
+    border: none;
+    background-color: rgba(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    &:hover {
+      background-color: rgba(0, 0, 0, 0.8);
+    }
+  }
+  .forward {
+    bottom: 0;
+    left: 0;
+  }
+  .backward {
+    bottom: 0;
+    right: 0;
+  }
 }
 
 .slider-description {
@@ -54,6 +82,40 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  button {
+    height: 40px;
+    border: none;
+    color: $clr-white;
+    background-color: $clr-accent;
+    font-family: $font-base;
+    font-size: $font-size-small;
+    box-sizing: border-box;
+    transition: 0.3s;
+    &:hover {
+      color: $clr-accent;
+      background-color: $clr-white;
+    }
+    &:focus {
+      outline: 0;
+    }
+    a {
+      text-decoration: none;
+      color: $clr-white;
+      font-weight: bold;
+      &:link {
+        color: $clr-accent;
+      }
+      &:visited {
+        color: $clr-accent;
+      }
+      &:hover {
+        color: $clr-accent;
+      }
+      &:active {
+        color: $clr-accent;
+      }
+    }
+  }
   svg {
     cursor: pointer;
   }
