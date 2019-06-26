@@ -23,8 +23,8 @@ class Home extends Component {
         x: undefined,
         y: undefined,
       },
-      windowWidth: window.innerWidth,
-      windowHeight: window.innerHeight,
+      // windowWidth: window.innerWidth,
+      // windowHeight: window.innerHeight,
     }
   }
 
@@ -125,10 +125,10 @@ class Home extends Component {
   }
 
   handleResize = () => {
-    this.setState({
-      windowWidth: window.innerWidth,
-      windowHeight: window.innerHeight,
-    })
+    // this.setState({
+    //   windowWidth: window.innerWidth,
+    //   windowHeight: window.innerHeight,
+    // })
     this.init()
   }
 
