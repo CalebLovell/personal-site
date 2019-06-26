@@ -162,8 +162,12 @@ class Home extends Component {
     this.init()
   }
 
+  componentWillMount() {
+    this.setState({ windowWidth: window.innerWidth, windowHeight: window.innerHeight })
+  }
+
   componentDidMount() {
-    this.setState({ width: window.innerWidth, height: window.innerHeight })
+    this.setState({ windowWidth: window.innerWidth, windowHeight: window.innerHeight })
     this.init()
     requestAnimationFrame(this.animate)
     window.addEventListener("resize", this.handleResize)
