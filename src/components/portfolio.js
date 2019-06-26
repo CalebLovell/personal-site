@@ -58,7 +58,7 @@ const Portfolio = () => {
       >
         <div className="modal">
           <div className="slider-container">
-            <img src={carousel[currentImageIndex]} alt="project-image" />
+            <img src={carousel[currentImageIndex]} alt="project-preview" />
             <button
               className="backward"
               onClick={() => {
@@ -85,7 +85,7 @@ const Portfolio = () => {
             </div>
             <div className="slider-description-bottom">
               <button>
-                <a href={`${link}`} target="_blank">
+                <a href={`${link}`} target="_blank" rel="noopener noreferrer">
                   View Live Site
                 </a>
               </button>

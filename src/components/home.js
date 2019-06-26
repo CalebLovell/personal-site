@@ -2,7 +2,6 @@ import React, { Component, createRef } from "react"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons'
  
-
 // Vars for editing circle properties
 const colors = [
   `rgba(237,235,246,`,
