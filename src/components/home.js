@@ -11,7 +11,7 @@ const colors = [
   `rgba(191,91,4,`,
 ]
 
-const numberOfCircles = 300
+const numberOfCircles = 50
 let circleArray = []
 
 class Home extends Component {
@@ -49,8 +49,8 @@ class Home extends Component {
         c.beginPath()
         c.arc(this.x, this.y, this.radius, 0, Math.PI * 2, false)
         c.fillStyle = `${this.color}${this.opacity})`
-        // c.shadowColor = "#E3EAEF"
-        // c.shadowBlur = 20
+        c.shadowColor = "#E3EAEF"
+        c.shadowBlur = 20
         c.fill()
         c.closePath()
         c.restore()
