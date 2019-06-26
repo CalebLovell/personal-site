@@ -23,8 +23,8 @@ class Home extends Component {
         x: undefined,
         y: undefined,
       },
-      // windowWidth: window.innerWidth,
-      // windowHeight: window.innerHeight,
+      windowWidth: window.innerWidth,
+      windowHeight: window.innerHeight,
     }
   }
 
@@ -125,21 +125,21 @@ class Home extends Component {
   }
 
   handleResize = () => {
-    // this.setState({
-    //   windowWidth: window.innerWidth,
-    //   windowHeight: window.innerHeight,
-    // })
+    this.setState({
+      windowWidth: window.innerWidth,
+      windowHeight: window.innerHeight,
+    })
     this.init()
   }
 
   componentDidMount() {
     this.init()
     requestAnimationFrame(this.animate)
-    // window.addEventListener("resize", this.handleResize)
+    window.addEventListener("resize", this.handleResize)
   }
 
   componentWillUnmount() {
-    // window.removeEventListener("resize", this.handleResize)
+    window.removeEventListener("resize", this.handleResize)
   }
 
   render() {
@@ -148,8 +148,8 @@ class Home extends Component {
         <div className="canvas-container">
           <canvas
             ref={this.canvasRef}
-            // width={window.innerWidth}
-            // height={window.innerHeight}
+            width={this.state.windowWidth}
+            height={this.state.windowHeight}
             onMouseMove={e =>
               this.setState({
                 mousePosition: {
