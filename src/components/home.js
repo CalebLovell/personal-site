@@ -135,11 +135,11 @@ class Home extends Component {
   componentDidMount() {
     this.init()
     requestAnimationFrame(this.animate)
-    window.addEventListener("resize", this.handleResize)
+    // window.addEventListener("resize", this.handleResize)
   }
 
   componentWillUnmount() {
-    window.removeEventListener("resize", this.handleResize)
+    // window.removeEventListener("resize", this.handleResize)
   }
 
   render() {
@@ -148,8 +148,8 @@ class Home extends Component {
         <div className="canvas-container">
           <canvas
             ref={this.canvasRef}
-            width={window.innerWidth}
-            height={window.innerHeight}
+            // width={window.innerWidth}
+            // height={window.innerHeight}
             onMouseMove={e =>
               this.setState({
                 mousePosition: {
