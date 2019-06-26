@@ -18,7 +18,6 @@ const Contact = () => {
         <input type="text" name="name" placeholder="Name" />
         <input type="email" name="email" placeholder="Email" />
         <textarea name="message" placeholder="Message" rows="7" />
-        <div data-netlify-recaptcha="true" />
         <button>Send</button>
       </form>
     </section>
