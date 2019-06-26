@@ -155,13 +155,15 @@ class Home extends Component {
     }
   }
 
-  // handleResize = () => {
-  //   this.setState({
-  //     windowWidth: window.innerWidth,
-  //     windowHeight: window.innerHeight,
-  //   })
-  //   this.init()
-  // }
+  handleResize = () => {
+    this.setState({
+      canvasSize: {
+        width: this.canvasContainerRef.current.offsetWidth,
+        height: this.canvasContainerRef.current.offsetHeight,
+      },
+    })
+    this.init()
+  }
 
   componentDidMount = async () => {
     await this.setState({
@@ -173,11 +175,11 @@ class Home extends Component {
     await console.log(this.state)
     await this.init()
     requestAnimationFrame(this.animate)
-    // window.addEventListener("resize", this.handleResize)
+    window.addEventListener("resize", this.handleResize)
   }
 
   componentWillUnmount() {
-    // window.removeEventListener("resize", this.handleResize)
+    window.removeEventListener("resize", this.handleResize)
   }
 
   renderCanvas = () => {
