@@ -10,6 +10,7 @@ const colors = [
   `rgba(128,0,0,`,
   `rgba(191,91,4,`,
 ]
+
 const numberOfCircles = 300
 let circleArray = []
 
@@ -41,21 +42,21 @@ class Home extends Component {
       color,
       opacity,
       zoomedRadius,
-      minRadius: radius, // Helpful so that we can make circles return to their original state later on
+      minRadius: radius, // Helpful so circles return to their original state later on
       draw: function() {
         // Draws a circle when invoked
         c.save()
         c.beginPath()
         c.arc(this.x, this.y, this.radius, 0, Math.PI * 2, false)
         c.fillStyle = `${this.color}${this.opacity})`
-        c.shadowColor = "#E3EAEF"
-        c.shadowBlur = 20
+        // c.shadowColor = "#E3EAEF"
+        // c.shadowBlur = 20
         c.fill()
         c.closePath()
         c.restore()
       },
       update: function() {
-        // Updates our circles in various ways when invoked
+        // Updates circles in various ways when invoked
         // Bounce circles off x-axis walls
         if (
           this.x + this.radius > self.canvasRef.current.width ||
