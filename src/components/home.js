@@ -18,14 +18,14 @@ class Home extends Component {
   constructor(props) {
     super(props)
     this.canvasRef = createRef()
+    this.canvasContainerRef = createRef()
 
     this.state = {
       mousePosition: {
         x: undefined,
         y: undefined,
       },
-      windowWidth: 0,
-      windowHeight: 0,
+      canvasSize: null,
     }
   }
 
@@ -155,46 +155,55 @@ class Home extends Component {
     }
   }
 
-  handleResize = () => {
-    this.setState({
-      windowWidth: window.innerWidth,
-      windowHeight: window.innerHeight,
+  // handleResize = () => {
+  //   this.setState({
+  //     windowWidth: window.innerWidth,
+  //     windowHeight: window.innerHeight,
+  //   })
+  //   this.init()
+  // }
+
+  componentDidMount = async () => {
+    await this.setState({
+      canvasSize: {
+        width: this.canvasContainerRef.current.offsetWidth,
+        height: this.canvasContainerRef.current.offsetHeight,
+      },
     })
-    this.init()
-  }
-
-  componentWillMount() {
-    this.setState({ windowWidth: window.innerWidth, windowHeight: window.innerHeight })
-  }
-
-  componentDidMount() {
-    this.setState({ windowWidth: window.innerWidth, windowHeight: window.innerHeight })
-    this.init()
+    await console.log(this.state)
+    await this.init()
     requestAnimationFrame(this.animate)
-    window.addEventListener("resize", this.handleResize)
+    // window.addEventListener("resize", this.handleResize)
   }
 
   componentWillUnmount() {
-    window.removeEventListener("resize", this.handleResize)
+    // window.removeEventListener("resize", this.handleResize)
+  }
+
+  renderCanvas = () => {
+    const { width, height } = this.state.canvasSize
+    return (
+      <canvas
+        ref={this.canvasRef}
+        width={width}
+        height={height}
+        onMouseMove={e =>
+          this.setState({
+            mousePosition: {
+              x: e.nativeEvent.offsetX,
+              y: e.nativeEvent.offsetY,
+            },
+          })
+        }
+      />
+    )
   }
 
   render() {
     return (
       <section className="home">
-        <div className="canvas-container">
-          <canvas
-            ref={this.canvasRef}
-            width={this.state.windowWidth}
-            height={this.state.windowHeight}
-            onMouseMove={e =>
-              this.setState({
-                mousePosition: {
-                  x: e.nativeEvent.offsetX,
-                  y: e.nativeEvent.offsetY,
-                },
-              })
-            }
-          />
+        <div className="canvas-container" ref={this.canvasContainerRef}>
+          {this.state.canvasSize && this.renderCanvas()}
         </div>
         <div className="intro-container">
           <h1>
