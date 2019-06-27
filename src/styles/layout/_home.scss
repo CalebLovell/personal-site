@@ -28,11 +28,11 @@ canvas {
   align-items: center;
   font-family: $font-base;
   h1 {
-    color: white;
+    color: $clr-white;
     font-size: $font-size-large;
     margin-bottom: 30px;
     span {
-      color: $clr-accent;
+      color: $clr-red;
       font-weight: bold;
     }
   }

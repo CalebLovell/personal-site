@@ -1,29 +1,30 @@
 header {
   height: $header-height;
   width: 100%;
-  display: flex;
-  justify-content: center;
-  background-color:	#0A0D14;
+  background-color:	$clr-bg-light;
   position: sticky;
   top: 0;
   z-index: 2;
+  display: flex;
+  justify-content: center;
+  border-bottom: 2px solid $clr-red;
   nav {
+    width: 68%;
     height: 100%;
-    width: 35%;
     display: flex;
-    align-items: center;
     ul {
       height: 100%;
       width: 100%;
       display: flex;
-      justify-content: space-between;
       align-items: center;
     }
     li a {
+      color: $clr-white;
       font-size: $font-size-med;
       font-family: $font-base;
       text-transform: uppercase;
       text-decoration: none;
+      margin-right: 50px;
     }
   }
 }

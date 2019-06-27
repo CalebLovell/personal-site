@@ -4,12 +4,23 @@ import { faArrowRight } from "@fortawesome/free-solid-svg-icons"
 
 // Vars for editing circle properties
 const colors = [
-  `rgba(237,235,246,`,
-  `rgba(255,229,154,`,
-  `rgba(108,169,223,`,
-  `rgba(128,0,0,`,
-  `rgba(191,91,4,`,
+  `rgba(255,255,255,`,
+  `rgba(255,255,255,`,
+  `rgba(255,255,255,`,
+  `rgba(255,255,255,`,
+  `rgba(242,234,190,`,
+  `rgba(245,132,26,`,
+  `rgba(197,60,4,`,
+  `rgba(216,2,5,`,
+  `rgba(10, 17, 153,`,
 ]
+
+// rgba(255,255,255)
+// rgba(242,234,190)
+// rgba(245,132,26)
+// rgba(197,60,4)
+// rgba(216,2,5)
+// rgba(10, 17, 153)
 
 const numberOfCircles = 50
 let circleArray = []
