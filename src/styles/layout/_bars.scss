@@ -1,0 +1,61 @@
+.bars-container {
+  width: 100%;
+  height: 100%;
+  border: 1px solid black;
+  box-sizing: border-box;
+  display: relative;
+  .skill-container {
+    background: #eeeeee;
+    width: 100%;
+    height: 22px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    .skill-bar {
+      height: 100%;
+      .skill-title {
+        width: 100px;
+        height: 100%;
+        background-color: #05c2c9;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: $font-base;
+        font-size: $font-size-small;
+        color: $clr-white;
+        font-weight: bold;
+      }
+      background-color: #01a1a7;
+    }
+    .html {
+      width: 80%;
+    }
+    .css {
+      width: 90%;
+    }
+    .javascript {
+      width: 80%;
+    }
+    .react {
+      width: 70%;
+    }
+    .d3 {
+      width: 60%;
+    }
+    .node {
+      width: 50%;
+    }
+    .postgresql {
+      width: 70%;
+    }
+  }
+  span {
+    font-family: $font-base;
+    font-size: $font-size-small;
+    color: black;
+    position: absolute;
+    right: 2%;
+  }
+}
