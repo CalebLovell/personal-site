@@ -1,5 +1,6 @@
 import React from "react"
 import Title from "../components/title"
+import Bars from "../components/bars"
 
 const About = () => {
   return (
@@ -97,6 +98,7 @@ const About = () => {
           </div>
         </div>
       </div>
+      <Bars />
     </section>
   )
 }
