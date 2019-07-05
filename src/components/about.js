@@ -98,7 +98,7 @@ const About = () => {
           </div>
         </div>
       </div>
-      <Bars />
+      {/* <Bars /> */}
     </section>
   )
 }
