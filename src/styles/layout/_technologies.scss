@@ -1,0 +1,27 @@
+.technologies {
+    width: 350px;
+    height: 100%;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    align-items: center;
+    background-color: $clr-grey;
+    .tech-item {
+      height: 80%;
+      width: 80%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .devicon {
+        height: 100%;
+        width: 100%;
+      }
+      p {
+        color: $clr-white;
+        font-family: $font-base;
+        font-size: $font-size-med;
+      }
+    }
+  }

@@ -1,80 +1,90 @@
 .about {
-  height: calc(100vh - #{$header-height});
+  // height: calc(100vh - #{$header-height});
+  height: 100vh;
   width: 100%;
+  background-color: $clr-bg-2;
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: $clr-bg-2;
+  justify-content: space-around;
+}
+
+.flex-container {
+  // border: 2px solid orange;
+  width: $content-width;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10vh;
 }
 
 .about-container {
-  width: 68%;
-  height: 80%;
+  height: 100%;
   display: flex;
+  flex-direction: column;
+  align-items: center;
   justify-content: space-between;
-  margin-top: 100px;
-  margin-bottom: 100px;
+  // border: 2px solid white;
+  // box-sizing: border-box;
+}
+
+.title {
+  color: $clr-white;
+  font-family: $font-base;
+  font-size: 40px;
+  text-transform: uppercase;
+  margin-top: 10vh;
+  margin-bottom: 50px;
+  position: relative;
+  &::after {
+    content: "";
+    background-color: $clr-white;
+    height: 4px;
+    width: 70px;
+    position: absolute;
+    bottom: -15px;
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
 }
 
 .profile-pic-container {
-  border: 1px solid red;
   box-sizing: border-box;
   margin-bottom: 20px;
   .pic-wrapper {
-    height: calc(10vw + 60px);
-    width: calc(10vw + 60px);
+    height: calc(10vw + 70px);
+    width: calc(10vw + 100px);
     img {
       height: 100%;
       width: 100%;
       object-fit: cover;
-      border-radius: 50%;
+      clip-path: polygon(25% 0, 75% 0, 100% 50%, 75% 100%, 25% 100%, 0 50%);
       box-shadow: 0 5px 10px 0px rgba(0, 0, 0, 0.25);
     }
   }
 }
 
-.profile-description {
-  width: 500px;
-  border: 1px solid black;
-  box-sizing: border-box;
+.profile-subtitle {
+  color: $clr-white;
+  font-size: $font-size-med;
   font-family: $font-base;
-  line-height: 1.4;
-  h2 {
-    font-size: $font-size-med;
-    font-weight: bold;
-    text-align: center;
-  }
-  p {
-    margin-top: 10px;
-    font-size: $font-size-med;
-    text-align: center;
-  }
+  font-weight: bold;
+  text-align: center;
 }
 
-.technologies {
-  width: 350px;
-  height: 100%;
-  box-sizing: border-box;
-  display: grid;
-  grid-template-rows: repeat(4, 1fr);
-  grid-template-columns: repeat(3, 1fr);
-  justify-items: center;
-  align-items: center;
-  background-color: $clr-grey;
-  .tech-item {
-    height: 80%;
-    width: 80%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    .devicon {
-      height: 100%;
-      width: 100%;
-    }
-    p {
-      color: $clr-white;
-      font-family: $font-base;
-      font-size: $font-size-med;
+.profile-description {
+  width: 500px;
+  // border: 1px solid $clr-accent;
+  // box-sizing: border-box;
+  font-family: $font-base;
+  line-height: 2;
+  p {
+    color: $clr-white;
+    margin-top: 10px;
+    font-size: $font-size-small;
+    text-align: center;
+    span {
+      color: $clr-accent;
     }
   }
 }

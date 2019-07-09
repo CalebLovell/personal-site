@@ -1,13 +1,22 @@
 .bars-container {
-  width: 100%;
-  height: 100%;
-  border: 1px solid black;
+  width: 550px;
+  // height: 100%;
+  // border: 2px solid blue;
   box-sizing: border-box;
   display: relative;
+  margin-left: 100px;
+  h2 {
+    color: $clr-white;
+    font-family: $font-base;
+    font-size: $font-size-med;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: center;
+  }
   .skill-container {
-    background: #eeeeee;
+    background: $clr-grey;
     width: 100%;
-    height: 22px;
+    height: 28px;
     margin-bottom: 10px;
     display: flex;
     flex-direction: column;
@@ -16,18 +25,18 @@
     .skill-bar {
       height: 100%;
       .skill-title {
-        width: 100px;
+        width: 120px;
         height: 100%;
-        background-color: #05c2c9;
+        background-color: $clr-accent;
         display: flex;
         justify-content: center;
         align-items: center;
         font-family: $font-base;
-        font-size: $font-size-small;
+        font-size: 14px;
         color: $clr-white;
         font-weight: bold;
       }
-      background-color: #01a1a7;
+      background-color: #962f4b;
     }
     .html {
       width: 80%;
@@ -44,17 +53,33 @@
     .d3 {
       width: 60%;
     }
+    .gatsby {
+      width: 50%;
+    }
     .node {
       width: 50%;
     }
     .postgresql {
       width: 70%;
     }
+    .spanish {
+      width: 80%;
+    }
+    .portuguese {
+      width: 90%;
+    }
+    .italian {
+      width: 60%;
+    }
+  }
+  .last {
+    margin-bottom: 0;
   }
   span {
     font-family: $font-base;
-    font-size: $font-size-small;
-    color: black;
+    font-weight: bold;
+    font-size: 14px;
+    color: $clr-white;
     position: absolute;
     right: 2%;
   }
