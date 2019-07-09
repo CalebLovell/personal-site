@@ -90,7 +90,7 @@ const Portfolio = () => {
                   View Live Site
                 </a>
               </button>
-              <FontAwesomeIcon icon={faTimes} onClick={() => setShow(`none`)} />
+              <FontAwesomeIcon icon={faTimes} size="lg" onClick={() => setShow(`none`)} />
             </div>
           </div>
         </div>

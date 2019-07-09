@@ -1,6 +1,8 @@
 import React from "react"
 import Bars from "./bars"
 
+import profPic from "../../static/prof-pic.jpg"
+
 const About = () => {
   return (
     <section className="about" id="about">
@@ -9,7 +11,7 @@ const About = () => {
         <div className="about-container">
           <div className="profile-pic-container">
             <div className="pic-wrapper">
-              <img src="prof-pic.jpg" alt="my beautiful face" />
+              <img src={profPic} alt="my face" />
             </div>
           </div>
           <h2 className="profile-subtitle">Who is this guy?</h2>
