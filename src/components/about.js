@@ -3,7 +3,7 @@ import Bars from "./bars"
 
 const About = () => {
   return (
-    <section className="about">
+    <section className="about" id="about">
       <h1 className="title">About Me</h1>
       <div className="flex-container">
         <div className="about-container">
@@ -17,7 +17,7 @@ const About = () => {
             <p>
               I'm a full-stack <span>web developer</span> with a particular passion for
               making interactive front-end projects and data visualizations. I
-              am a voracious learner and love to teach myself new things. In my free time you can find me reading, discussing politics or enjoying the beautiful Utah ourdoors!
+              am a voracious learner and love to teach myself new things. In my free time you can find me reading, discussing politics or enjoying the ourdoors!
             </p>
           </div>
         </div>

@@ -7,3 +7,13 @@ footer {
   background-color: $clr-bg-light;
   color: $clr-white;
 }
+
+.img-container {
+  height: 20px;
+  width: 20px;
+  img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+}

@@ -1,4 +1,5 @@
 import React, { Component, createRef } from "react"
+import { Link } from "gatsby"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons"
 
@@ -60,8 +61,8 @@ class Home extends Component {
         c.beginPath()
         c.arc(this.x, this.y, this.radius, 0, Math.PI * 2, false)
         c.fillStyle = `${this.color}${this.opacity})`
-        c.shadowColor = "#E3EAEF"
-        c.shadowBlur = 20
+        // c.shadowColor = "#E3EAEF"
+        // c.shadowBlur = 20
         c.fill()
         c.closePath()
         c.restore()
@@ -70,15 +71,15 @@ class Home extends Component {
         // Updates circles in various ways when invoked
         // Bounce circles off x-axis walls
         if (
-          this.x + this.radius > self.canvasRef.current.width ||
-          this.x - this.radius < 0
+          this.x + this.radius > self.canvasRef.current.width + 50 ||
+          this.x - this.radius < 0 - 50
         ) {
           this.dx = -this.dx
         }
         // Bounce circles off y-axis walls
         if (
-          this.y + this.radius > self.canvasRef.current.height ||
-          this.y - this.radius < 0
+          this.y + this.radius > self.canvasRef.current.height + 50 ||
+          this.y - this.radius < 0 - 50
         ) {
           this.dy = -this.dy
         }
@@ -214,7 +215,7 @@ class Home extends Component {
 
   render() {
     return (
-      <section className="home">
+      <section className="home" id="home">
         <div className="canvas-container" ref={this.canvasContainerRef}>
           {this.state.canvasSize && this.renderCanvas()}
         </div>
@@ -224,7 +225,9 @@ class Home extends Component {
           </h1>
           <h1>I'm a web developer.</h1>
           <button>
-            View my work <FontAwesomeIcon icon={faArrowRight} />
+            <Link to="#about">
+              View my work <FontAwesomeIcon icon={faArrowRight} />
+            </Link>
           </button>
         </div>
       </section>

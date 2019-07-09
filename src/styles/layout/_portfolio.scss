@@ -12,7 +12,7 @@
     font-size: 40px;
     text-transform: uppercase;
     margin-top: 10vh;
-    margin-bottom: 50px;
+    margin-bottom: 10vh;
     position: relative;
     &::after {
       content: "";
@@ -142,6 +142,7 @@
   grid-gap: 2%;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 1fr);
+  margin-bottom: 10vh;
 }
 
 .card-container {
@@ -199,7 +200,6 @@
     color: $clr-white;
     font-family: $font-base;
     font-size: $font-size-small;
-    border-radius: 0.4rem;
   }
 }
 

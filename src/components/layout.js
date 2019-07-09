@@ -12,12 +12,12 @@ import "../styles/styles.scss"
 const Layout = props => {
   return (
     <main>
-      {/* <Home /> */}
-      {/* <Header /> */}
+      <Home />
+      <Header />
       <About />
-      {/* <Portfolio /> */}
-      {/* <Contact /> */}
-      {/* <Footer /> */}
+      <Portfolio />
+      <Contact />
+      <Footer />
     </main>
   )
 }

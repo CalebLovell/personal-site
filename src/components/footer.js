@@ -4,7 +4,11 @@ const Footer = () => {
   return (
     <footer>
       <p>Custom Built with Gatsby</p>
-      <p>Link to GitHub Repo</p>
+      <a href={`${`www.google.com`}`} target="_blank" rel="noopener noreferrer">      
+        <div className="img-container">
+          <img src="social/github.svg" alt="github" className="github"></img>
+        </div>
+      </a>
       <p>Caleb Lovell &copy; 2019</p>
     </footer>
   )

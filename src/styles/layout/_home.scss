@@ -39,14 +39,30 @@ canvas {
   button {
     z-index: 1;
     font-weight: bold;
+    a {
+      color: $clr-white;
+      text-decoration: none;
+      &:link {
+        color: $clr-white;
+      }
+      &:visited {
+        color: $clr-white;
+      }
+      &:hover {
+        color: $clr-white;
+      }
+      &:active {
+        color: $clr-white;
+      }
+    }
     svg {
       margin-left: 0.3em;
     }
     &:hover {
-      transition: .25s;
+      transition: 0.25s;
       svg {
         transform: rotate(90deg);
-        transition: .25s;
+        transition: 0.25s;
       }
     }
   }
