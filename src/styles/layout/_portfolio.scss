@@ -137,7 +137,11 @@
 }
 
 .cards-flex-wrapper {
+  width: $content-width;
   display: grid;
+  grid-gap: 2%;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
 }
 
 // .cards-flex-wrapper {
@@ -149,9 +153,8 @@
 // }
 
 .card-container {
-  width: calc(600px * 100%);
-  height: calc(281px * 100%);
-  margin: 0% 2%;
+  width: 100%;
+  height: 100%;
 }
 
 .card {
