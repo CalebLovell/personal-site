@@ -1,14 +1,24 @@
 import React from "react"
 
+import Header from "./header"
+import Home from "./home"
+import About from "./about"
+import Portfolio from "./portfolio"
+import Contact from "./contact"
 import Footer from "./footer"
+
 import "../styles/styles.scss"
 
 const Layout = props => {
   return (
-    <div>
-      {props.children}
-      <Footer />
-    </div>
+    <main>
+      <Home />
+      <Header />
+      <About />
+      <Portfolio />
+      <Contact />
+      {/* <Footer /> */}
+    </main>
   )
 }
 

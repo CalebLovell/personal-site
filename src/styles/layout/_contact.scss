@@ -2,56 +2,89 @@
   height: calc(100vh - #{$header-height});
   width: 100%;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: $clr-white;
+  background-color: $clr-bg-2;
+  clip-path: polygon(50% 5rem, 100% 0, 100% 100%, 0 100%, 0 0);
+  .title {
+    color: $clr-white;
+    font-family: $font-base;
+    font-size: 40px;
+    text-transform: uppercase;
+    margin-top: $clip-path-hack-margin;
+    margin-bottom: 50px;
+    position: relative;
+    &::after {
+      content: "";
+      background-color: $clr-white;
+      height: 4px;
+      width: 70px;
+      position: absolute;
+      bottom: -15px;
+      left: 0;
+      right: 0;
+      margin: auto;
+    }
+  }
+  p {
+    color: $clr-white;
+    font-family: $font-base;
+    font-size: 20px;
+    margin-bottom: 40px;
+  }
 }
 
 form {
   display: flex;
   flex-direction: column;
   align-items: center;
-  border: 1px solid blue;
   input {
-    font-family: $font-base;
-    height: 20px;
+    height: 30px;
     width: 500px;
-    padding: 12px;
-    color: $clr-black;
-    background-color: $clr-white;
+    border: 0;
+    padding: 10px 15px;
+    box-sizing: border-box;
+    outline: none;
+    color: $clr-white;
+    background-color: $clr-bg-dark;
+    font-family: $font-base;
     font-weight: 700;
-    border: none;
-    border-radius: 5px;
-    margin-bottom: 10px;
+    margin-bottom: 1%;
     &::placeholder {
-      color: $clr-black;
-      background-color: $clr-white;
+      color: $clr-white;
+      background-color: none;
       font-family: $font-base;
     }
   }
   textarea {
-    height: 200px;
-    width: 500px;    
-    font-family: $font-base;
+    height: 150px;
+    width: 500px;
     padding: 12px;
-    color: $clr-black;
-    background-color: $clr-white;
+    color: $clr-white;
+    background-color: $clr-bg-dark;
+    font-family: $font-base;
     font-weight: 700;
-    border: none;
-    border-radius: 5px;
-    margin-bottom: 10px;
+    border: 0;
+    padding: 10px 15px;
+    box-sizing: border-box;
+    outline: none;
+    margin-bottom: 2%;
     &::placeholder {
-      color: $clr-black;
-      background-color: $clr-white;
+      color: $clr-white;
+      background-color: none;
       font-family: $font-base;
     }
   }
   div {
-    height: 100%;
     width: 100%;
     display: flex;
     justify-content: flex-end;
-  }
-  button {
+    button {
+      height: 40px;
+      width: 120px;
+      margin: 0;
+      font-size: $font-size-small;
+    }
   }
 }

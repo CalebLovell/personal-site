@@ -1,23 +1,28 @@
-$clr-bg: #18121F;
-$clr-bg-light: #1C1D33;
-// $clr-bg: #233237;
-// $clr-bg: #1f222b;
-// $clr-bg-light: #66606B;
+$clr-bg: rgba(19, 18, 31, 1);
+$clr-bg-light: #181533;
+$clr-bg-dark: #1b1a29;
+$clr-bg-2: #252934;
 $clr-white: rgba(255, 255, 255, 1);
-$clr-grey: grey;
+$clr-offwhite: rgb(200, 200, 200);
+$clr-grey: rgb(120, 120, 120);
 $clr-black: black;
-$clr-blue: rgb(10, 17, 153);
-$clr-red: rgb(216,2,5);
 
-$clr-accent: rgb(197,60,4);
+$clr-red: rgb(222, 11, 15);
+$clr-blue: rgb(10, 17, 153);
+// $clr-blue: #928cd9;
+
+$clr-accent: rgb(197, 60, 4);
 
 $font-base: "Montserrat", sans-serif;
 
 $font-size-small: 16px;
 $font-size-med: 20px;
-$font-size-large: 48px;
+$font-size-large: 40px;
 
 $header-height: 50px;
+
+$content-width: 75%;
+$clip-path-hack-margin: 85px;
 
 // rgba(255,255,255)
 // rgba(242,234,190)

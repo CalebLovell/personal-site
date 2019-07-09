@@ -5,12 +5,13 @@ button {
   color: $clr-white;
   font-family: $font-base;
   font-size: $font-size-med;
-  border: 3px solid $clr-white;
+  border: 2px solid $clr-white;
   box-sizing: border-box;
   transition: 0.3s;
   &:hover {
-    background-color: $clr-red;
-    border-color: $clr-red;
+    background-color: $clr-blue;
+    border-color: $clr-blue;
+    cursor: pointer;
   }
   &:focus {
     outline: 0;

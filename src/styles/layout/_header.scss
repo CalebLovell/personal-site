@@ -7,9 +7,9 @@ header {
   z-index: 2;
   display: flex;
   justify-content: center;
-  border-bottom: 5px solid $clr-blue;
+  border-bottom: 5px solid $clr-red;
   nav {
-    width: 68%;
+    width: $content-width;
     height: 100%;
     display: flex;
     ul {

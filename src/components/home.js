@@ -8,11 +8,11 @@ const colors = [
   `rgba(255,255,255,`,
   `rgba(255,255,255,`,
   `rgba(255,255,255,`,
-  `rgba(242,234,190,`,
+  `rgba(246,238,166,`,
   `rgba(245,132,26,`,
   `rgba(197,60,4,`,
   `rgba(216,2,5,`,
-  `rgba(10, 17, 153,`,
+  `rgba(53,79,216,`,
 ]
 
 // rgba(255,255,255)
@@ -20,7 +20,7 @@ const colors = [
 // rgba(245,132,26)
 // rgba(197,60,4)
 // rgba(216,2,5)
-// rgba(10, 17, 153)
+// rgba(53,79,216)
 
 const numberOfCircles = 50
 let circleArray = []

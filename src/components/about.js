@@ -1,11 +1,8 @@
 import React from "react"
-import Title from "../components/title"
-import Bars from "../components/bars"
 
 const About = () => {
   return (
     <section className="about">
-      <Title title={`ABOUT`} />
       <div className="about-container">
         <div className="profile-container">
           <div className="profile-pic-container">
