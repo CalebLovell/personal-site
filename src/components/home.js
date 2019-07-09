@@ -23,7 +23,7 @@ const colors = [
 // rgba(216,2,5)
 // rgba(53,79,216)
 
-const numberOfCircles = 50
+const numberOfCircles = 30
 let circleArray = []
 
 class Home extends Component {
@@ -61,8 +61,8 @@ class Home extends Component {
         c.beginPath()
         c.arc(this.x, this.y, this.radius, 0, Math.PI * 2, false)
         c.fillStyle = `${this.color}${this.opacity})`
-        // c.shadowColor = "#E3EAEF"
-        // c.shadowBlur = 20
+        c.shadowColor = "#E3EAEF"
+        c.shadowBlur = 20
         c.fill()
         c.closePath()
         c.restore()
@@ -71,15 +71,15 @@ class Home extends Component {
         // Updates circles in various ways when invoked
         // Bounce circles off x-axis walls
         if (
-          this.x + this.radius > self.canvasRef.current.width + 50 ||
-          this.x - this.radius < 0 - 50
+          this.x + this.radius > self.canvasRef.current.width + 20 ||
+          this.x - this.radius < 0 - 20
         ) {
           this.dx = -this.dx
         }
         // Bounce circles off y-axis walls
         if (
-          this.y + this.radius > self.canvasRef.current.height + 50 ||
-          this.y - this.radius < 0 - 50
+          this.y + this.radius > self.canvasRef.current.height + 20 ||
+          this.y - this.radius < 0 - 20
         ) {
           this.dy = -this.dy
         }

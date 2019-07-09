@@ -5,6 +5,9 @@ import {
   faArrowRight,
   faArrowLeft,
 } from "@fortawesome/free-solid-svg-icons"
+// import { library, config } from "@fortawesome/fontawesome-svg-core"
+// config.autoAddCss = false
+// @import 'node_modules/@fortawesome/fontawesome-svg-core/styles'
 import usacountyexplorerHome from "../../static/project-screenshots/usacountyexplorer.com.png"
 import usacountyexplorerFavs from "../../static/project-screenshots/usacountyexplorer-favorites-view.png"
 
@@ -90,7 +93,11 @@ const Portfolio = () => {
                   View Live Site
                 </a>
               </button>
-              <FontAwesomeIcon icon={faTimes} size="lg" onClick={() => setShow(`none`)} />
+              <FontAwesomeIcon
+                icon={faTimes}
+                size="lg"
+                onClick={() => setShow(`none`)}
+              />
             </div>
           </div>
         </div>
