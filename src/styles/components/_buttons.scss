@@ -5,12 +5,12 @@ button {
   color: $clr-white;
   font-family: $font-base;
   font-size: $font-size-med;
-  border: 2px solid $clr-white;
+  border: 2px solid $clr-accent;
   box-sizing: border-box;
   transition: 0.3s;
   &:hover {
-    background-color: $clr-blue;
-    border-color: $clr-blue;
+    background-color: $clr-accent;
+    border-color: $clr-accent;
     cursor: pointer;
   }
   &:focus {

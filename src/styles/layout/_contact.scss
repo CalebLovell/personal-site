@@ -28,7 +28,7 @@
     }
   }
   p {
-    color: $clr-white;
+    color: $clr-accent;
     font-family: $font-base;
     font-size: 20px;
     margin-bottom: 40px;
@@ -46,13 +46,13 @@ form {
     padding: 10px 15px;
     box-sizing: border-box;
     outline: none;
-    color: $clr-white;
+    color: $clr-grey;
     background-color: $clr-bg-dark;
     font-family: $font-base;
     font-weight: 700;
     margin-bottom: 1%;
     &::placeholder {
-      color: $clr-white;
+      color: $clr-grey;
       background-color: none;
       font-family: $font-base;
     }
@@ -61,7 +61,7 @@ form {
     height: 150px;
     width: 500px;
     padding: 12px;
-    color: $clr-white;
+    color: $clr-grey;
     background-color: $clr-bg-dark;
     font-family: $font-base;
     font-weight: 700;
@@ -71,7 +71,7 @@ form {
     outline: none;
     margin-bottom: 2%;
     &::placeholder {
-      color: $clr-white;
+      color: $clr-grey;
       background-color: none;
       font-family: $font-base;
     }

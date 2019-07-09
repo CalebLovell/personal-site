@@ -108,7 +108,7 @@ const Portfolio = () => {
             ></img>
             <div>
               <h1>USA County Explorer</h1>
-              <h2>Tech Used</h2>
+              <h2>D3.js, JavaScript, React, SASS, Node.js, PostgreSQL</h2>
             </div>
             <button
               onClick={() => {
@@ -138,7 +138,7 @@ const Portfolio = () => {
             <img src={lyricslogHome} alt="LyricsLog Home Page"></img>
             <div>
               <h1>LyricsLog</h1>
-              <h2>Tech Used</h2>
+              <h2>JavaScript, React, SASS, Node.js, PostgreSQL</h2>
             </div>
             <button
               onClick={() => {
