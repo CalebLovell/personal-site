@@ -3,6 +3,13 @@ import { Link } from "gatsby"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons"
 
+// This ensures that the icon CSS is loaded immediately before attempting to render icons
+import "@fortawesome/fontawesome-svg-core/styles.css";
+import { config } from "@fortawesome/fontawesome-svg-core";
+// Prevent fontawesome from dynamically adding its css since we did it manually above
+config.autoAddCss = false;
+
+
 // Vars for editing circle properties
 const colors = [
   `rgba(255,255,255,`,
