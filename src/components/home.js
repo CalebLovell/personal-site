@@ -9,7 +9,6 @@ import { config } from "@fortawesome/fontawesome-svg-core";
 // Prevent fontawesome from dynamically adding its css since we did it manually above
 config.autoAddCss = false;
 
-
 // Vars for editing circle properties
 const colors = [
   `rgba(255,255,255,`,
