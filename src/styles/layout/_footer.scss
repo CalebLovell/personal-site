@@ -17,6 +17,10 @@ footer {
     height: 50px;
     width: 40px;
     background-color: $clr-accent;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     &:hover {
       top: -35px;
     }
