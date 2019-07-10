@@ -51,7 +51,7 @@ const Bars = () => {
           <div className="skill-bar node">
             <div className="skill-title">Node.js</div>
           </div>
-          <span>50%</span>
+          <span>60%</span>
         </div>
       </div>
       <div className="bars-div">

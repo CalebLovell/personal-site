@@ -4,7 +4,7 @@ const Footer = () => {
   return (
     <footer>
       <p>Custom Built with Gatsby</p>
-      <a href={`${`www.google.com`}`} target="_blank" rel="noopener noreferrer">      
+      <a href={`https://github.com/CalebLovell/personal-site`} target="_blank" rel="noopener noreferrer">      
         <div className="img-container">
           <img src="social/github.svg" alt="github" className="github"></img>
         </div>
