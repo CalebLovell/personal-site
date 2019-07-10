@@ -25,6 +25,10 @@ header {
       text-transform: uppercase;
       text-decoration: none;
       margin-right: 50px;
+      &:hover {
+        color: $clr-accent;
+        transition: .3s;
+      }
     }
   }
 }

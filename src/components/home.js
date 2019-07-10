@@ -224,11 +224,11 @@ class Home extends Component {
             Hello! I'm <span>Caleb Lovell</span>.
           </h1>
           <h1>I'm a web developer.</h1>
-          <button>
-            <Link to="#about">
+          <Link to="#about">
+            <button>
               View my work <FontAwesomeIcon icon={faArrowRight} />
-            </Link>
-          </button>
+            </button>
+          </Link>
         </div>
       </section>
     )

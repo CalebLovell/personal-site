@@ -36,8 +36,10 @@ canvas {
       font-weight: bold;
     }
   }
-  button {
+  a {
     z-index: 1;
+  }
+  button {
     font-weight: bold;
     a {
       color: $clr-white;

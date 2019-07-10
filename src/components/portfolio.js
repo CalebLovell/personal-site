@@ -52,7 +52,7 @@ const Portfolio = () => {
   }
 
   return (
-    <section className="portfolio" id="#portfolio">
+    <section className="portfolio" id="portfolio">
       <h1 className="title">Projects</h1>
       <div
         className="modal-container"
