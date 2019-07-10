@@ -226,7 +226,7 @@ class Home extends Component {
           <h1>I'm a web developer.</h1>
           <Link to="#about">
             <button>
-              View my work <FontAwesomeIcon icon={faArrowRight} />
+              View my work <FontAwesomeIcon icon={faArrowRight} size="sm" />
             </button>
           </Link>
         </div>
