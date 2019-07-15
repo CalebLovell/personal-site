@@ -1,5 +1,11 @@
 import React, { useState } from "react"
 
+const encode = (data) => {
+  return Object.keys(data)
+      .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+      .join("&");
+}
+
 const Contact = () => {
   const [name, setName] = useState(``)
   const [email, setEmail] = useState(``)
@@ -21,8 +27,9 @@ const Contact = () => {
     e.preventDefault()
     fetch("/", {
       method: "POST",
-      body: message
-      })
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: encode({ "form-name": "contact", message })
+    })
       .then(() => alert(`success`))
       .catch(error => alert(error))
   }
