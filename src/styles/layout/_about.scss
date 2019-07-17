@@ -71,6 +71,12 @@
   font-family: $font-base;
   font-weight: bold;
   text-align: center;
+  svg {
+    color: $clr-accent;
+    &:hover {
+      cursor: pointer;
+    }
+  }
 }
 
 .profile-description {
