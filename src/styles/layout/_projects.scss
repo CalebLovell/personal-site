@@ -194,11 +194,18 @@
       font-size: 24px;
       margin-bottom: 20px;
       text-align: center;
+      @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) {
+        font-size: 20px;
+        margin-bottom: 10px;
+      }
     }
     h2 {
       font-size: 16px;
       color: $clr-accent;
       text-align: center;
+      @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) {
+        font-size: 12px;
+      }
     }
   }
   button {
@@ -215,6 +222,11 @@
     font-family: $font-base;
     font-size: $font-size-small;
     text-align: center;
+    @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) {
+      width: 120px;
+      height: 35px;
+      font-size: 12px;
+    }
   }
 }
 
