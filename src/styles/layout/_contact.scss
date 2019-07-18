@@ -53,6 +53,9 @@ form {
     font-family: $font-base;
     font-weight: 700;
     margin-bottom: 1%;
+    @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) {
+      width: 80vw;
+    }
     &::placeholder {
       color: $clr-grey;
       background-color: none;
@@ -72,6 +75,9 @@ form {
     box-sizing: border-box;
     outline: none;
     margin-bottom: 2%;
+    @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) {
+      width: 80vw;
+    }
     &::placeholder {
       color: $clr-grey;
       background-color: none;
