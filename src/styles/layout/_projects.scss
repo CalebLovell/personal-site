@@ -10,10 +10,13 @@
   .title {
     color: $clr-white;
     font-family: $font-head;
-    font-size: 60px;
+    font-size: $font-size-title;
     text-transform: uppercase;
     position: relative;
     text-align: center;
+    @media only screen and (min-device-width: 320px) and (max-device-width: $max-width-media-query) and (-webkit-min-device-pixel-ratio: 2) {
+      font-size: 36px;
+    }
     &::after {
       content: "";
       background-color: $clr-white;
