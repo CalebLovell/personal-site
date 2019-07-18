@@ -13,7 +13,7 @@ const Layout = props => {
   return (
     <main>
       <Home />
-      <Header />
+      {/* <Header /> */}
       <About />
       <Portfolio />
       <Contact />
