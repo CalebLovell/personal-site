@@ -1,7 +1,6 @@
 import React from "react"
 import { Helmet } from "react-helmet"
 import Layout from "../components/layout"
-import sitePreview from "../../static/portfolio-screenshot.png"
 
 const IndexPage = () => {
   return (
@@ -14,7 +13,10 @@ const IndexPage = () => {
         />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="http://www.caleblovell.dev/" />
-        <meta property="og:image" content="www.google.com" />
+        <meta
+          property="og:image"
+          content="https://www.caleblovell.dev/static/portfolio-screenshot-030b4ebec81345d8baddd5de18589956.png"
+        />
         <meta
           property="og:description"
           description="Hello! I'm Caleb Lovell. I'm a full-stack web developer."
