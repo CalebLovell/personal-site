@@ -1,9 +1,11 @@
 import React, { useState } from "react"
 
-const encode = (data) => {
+import Swal from "sweetalert2"
+
+const encode = data => {
   return Object.keys(data)
-      .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
-      .join("&");
+    .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+    .join("&")
 }
 
 const Contact = () => {
@@ -28,10 +30,27 @@ const Contact = () => {
     fetch("/", {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: encode({ "form-name": "contact", name, email, message })
+      body: encode({ "form-name": "contact", name, email, message }),
     })
-      .then(() => alert(`yay`))
-      .catch(error => alert(error))
+      .then(() =>
+        Swal.fire({
+          title: "Message Sent",
+          text: "I'll get back to you as soon as possible!",
+          type: "success",
+          confirmButtonText: "OK",
+          confirmButtonColor: "rgb(214, 28, 81)",
+        })
+      )
+      .catch(error =>
+        Swal.fire({
+          title: "Error",
+          text:
+            "Sorry! Something went wrong. You can email me directly at caleblovell1@gmail.com or reach me through one of my social links below. Sorry for the inconvenience!",
+          type: error,
+          confirmButtonText: "OK",
+          confirmButtonColor: "rgb(214, 28, 81)",
+        })
+      )
   }
 
   return (
