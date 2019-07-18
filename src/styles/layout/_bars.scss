@@ -44,6 +44,15 @@
       }
       background-color: $clr-accent-dark;
     }
+    span {
+      font-family: $font-base;
+      font-weight: bold;
+      font-size: 14px;
+      color: $clr-white;
+      position: absolute;
+      right: 2%;
+      letter-spacing: 1px;
+    }
     .html {
       width: 80%;
     }
@@ -80,13 +89,5 @@
   }
   .last {
     margin-bottom: 0;
-  }
-  span {
-    font-family: $font-base;
-    font-weight: bold;
-    font-size: 14px;
-    color: $clr-white;
-    position: absolute;
-    right: 2%;
   }
 }

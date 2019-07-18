@@ -1,7 +1,7 @@
 header {
   height: $header-height;
   width: 100%;
-  background-color:	$clr-bg-light;
+  background-color: $clr-bg-light;
   position: sticky;
   top: 0;
   z-index: 2;
@@ -22,13 +22,18 @@ header {
       color: $clr-white;
       font-size: $font-size-med;
       font-family: $font-base;
-      text-transform: uppercase;
       text-decoration: none;
-      margin-right: 50px;
       &:hover {
         color: $clr-accent;
-        transition: .3s;
+        transition: 0.3s;
       }
     }
   }
+}
+
+.link-divider {
+  height: 25px;
+  width: 3px;
+  background-color: $clr-accent;
+  margin: 0 30px;
 }

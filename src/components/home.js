@@ -4,10 +4,10 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons"
 
 // This ensures that the icon CSS is loaded immediately before attempting to render icons
-import "@fortawesome/fontawesome-svg-core/styles.css";
-import { config } from "@fortawesome/fontawesome-svg-core";
+import "@fortawesome/fontawesome-svg-core/styles.css"
+import { config } from "@fortawesome/fontawesome-svg-core"
 // Prevent fontawesome from dynamically adding its css since we did it manually above
-config.autoAddCss = false;
+config.autoAddCss = false
 
 // Vars for editing circle properties
 const colors = [
@@ -22,6 +22,7 @@ const colors = [
   `rgba(53,79,216,`,
 ]
 
+// List of colors in copiable format
 // rgba(255,255,255)
 // rgba(242,234,190)
 // rgba(245,132,26)
@@ -227,12 +228,12 @@ class Home extends Component {
         </div>
         <div className="intro-container">
           <h1>
-            Hello! I'm <span>Caleb Lovell</span>.
+            Hello! I'm <span>Caleb Lovell</span>.<br /> I'm a full-stack web developer.
           </h1>
-          <h1>I'm a web developer.</h1>
           <Link to="#about">
             <button>
-              View my work <FontAwesomeIcon icon={faArrowRight} fixedWidth size="sm" />
+              View my work{" "}
+              <FontAwesomeIcon icon={faArrowRight} fixedWidth size="sm" />
             </button>
           </Link>
         </div>

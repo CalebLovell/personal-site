@@ -21,7 +21,7 @@ const About = () => {
           <h2 className="profile-subtitle">
             Who is this guy? &nbsp;
             <a href={`${resume}`} target="_blank" rel="noopener noreferrer">
-              <FontAwesomeIcon icon={faFileDownload} title="Download Resume" />
+              <FontAwesomeIcon icon={faFileDownload} title="Open Resume" />
             </a>
           </h2>
           <div className="profile-description">

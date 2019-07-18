@@ -7,26 +7,26 @@ const Header = () => {
   //   const changeView = () => {
   //     navigate("#about")
   //   }
+  // onClick={() => {
+  //   changeView()
+  // }}
 
   return (
     <header>
       <nav>
         <ul>
           <li>
-            <Link to="#home" activeStyle={{ color: "red" }}>
-              Home
-            </Link>
+            <Link to="#home">Home</Link>
           </li>
-          <li
-          // onClick={() => {
-          //   changeView()
-          // }}
-          >
+          <li className="link-divider"></li>
+          <li>
             <Link to="#about">About</Link>
           </li>
+          <li className="link-divider"></li>
           <li>
             <Link to="#projects">Projects</Link>
           </li>
+          <li className="link-divider"></li>
           <li>
             <Link to="#contact">Contact</Link>
           </li>

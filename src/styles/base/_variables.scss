@@ -14,11 +14,14 @@ $clr-blue: rgb(10, 17, 153);
 $clr-accent: rgb(214, 28, 81);
 $clr-accent-dark: #962f4b;
 
+@import url(https://fonts.googleapis.com/css?family=Karla|Montserrat&display=swap);
+$font-head: "Karla", sans-serif;
 $font-base: "Montserrat", sans-serif;
 
 $font-size-small: 16px;
 $font-size-med: 20px;
 $font-size-large: 40px;
+$font-size-title: 48px;
 
 $header-height: 50px;
 

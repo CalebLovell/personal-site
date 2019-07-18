@@ -26,15 +26,15 @@ canvas {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  font-family: $font-base;
   h1 {
     color: $clr-white;
-    font-size: $font-size-large;
+    font-size: 38px;
     margin-bottom: 30px;
     text-align: center;
+    line-height: 3rem;
+    font-family: $font-head;
     span {
       color: $clr-accent;
-      font-weight: bold;
     }
   }
   a {
@@ -42,6 +42,7 @@ canvas {
   }
   button {
     font-weight: bold;
+    font-family: $font-head;
     a {
       color: $clr-white;
       text-decoration: none;

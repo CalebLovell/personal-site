@@ -11,8 +11,8 @@
   margin: 0;
   .title {
     color: $clr-white;
-    font-family: $font-base;
-    font-size: 40px;
+    font-family: $font-head;
+    font-size: $font-size-title;
     text-transform: uppercase;
     margin-top: $clip-path-hack-margin;
     margin-bottom: 50px;
@@ -23,7 +23,7 @@
       height: 4px;
       width: 70px;
       position: absolute;
-      bottom: -15px;
+      bottom: -20px;
       left: 0;
       right: 0;
       margin: auto;
