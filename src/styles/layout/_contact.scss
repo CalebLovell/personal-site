@@ -1,5 +1,4 @@
 .contact {
-  // height: calc(100vh - #{$header-height});
   height: 100vh;
   width: 100%;
   display: flex;
@@ -7,8 +6,8 @@
   align-items: center;
   justify-content: center;
   background-color: $clr-bg-2;
-  clip-path: polygon(50% 5rem, 101% 0, 101% 101%, 0 101%, 0 0);
-  -webkit-clip-path: polygon(50% 5rem, 101% 0, 101% 101%, 0 101%, 0 0);
+  clip-path: polygon(50% 7.5rem, 101% 0, 101% 101%, 0 101%, 0 0);
+  -webkit-clip-path: polygon(50% 7.5rem, 101% 0, 101% 101%, 0 101%, 0 0);
   margin: 0;
   .title {
     color: $clr-white;

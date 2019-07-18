@@ -1,40 +1,37 @@
 .about {
-  // height: calc(100vh - #{$header-height});
-  height: 100vh;
+  height: calc(100vh + #{$clip-path-hack-margin});
   width: 100%;
+  display: grid;
+  grid-template-rows: 15vh 85vh;
+  align-items: flex-end;
+  justify-content: center;
   background-color: $clr-bg-2;
+  margin-bottom: -$clip-path-hack-margin;
+}
+
+.flex-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-container {
+  height: 583px;
+  width: 550px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
 }
 
-.flex-container {
-  // border: 2px solid orange;
-  height: 500px;
-  width: $content-width;
-  display: flex;
-  justify-content: center;
-  // margin-bottom: 10vh;
-}
-
-.about-container {
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  // border: 2px solid white;
-  // box-sizing: border-box;
-}
-
 .title {
   color: $clr-white;
   font-family: $font-base;
   font-size: 40px;
+  text-align: center;
   text-transform: uppercase;
-  margin-top: $header-height;
-  // margin-bottom: 100px;
   position: relative;
   &::after {
     content: "";
@@ -81,8 +78,6 @@
 
 .profile-description {
   width: 500px;
-  // border: 1px solid $clr-accent;
-  // box-sizing: border-box;
   font-family: $font-base;
   line-height: 2;
   p {

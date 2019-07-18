@@ -1,9 +1,10 @@
-.portfolio {
-  height: calc(100vh - #{$header-height} + #{$clip-path-hack-margin});
+.projects {
+  height: calc(100vh + #{$clip-path-hack-margin});
   width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  display: grid;
+  grid-template-rows: 20vh 80vh;
+  justify-content: center;
+  align-items: flex-end;
   background-color: $clr-bg;
   margin-bottom: -$clip-path-hack-margin;
   .title {
@@ -11,9 +12,8 @@
     font-family: $font-base;
     font-size: 40px;
     text-transform: uppercase;
-    margin-top: 10vh;
-    margin-bottom: 10vh;
     position: relative;
+    text-align: center;
     &::after {
       content: "";
       background-color: $clr-white;
@@ -136,13 +136,20 @@
   }
 }
 
-.cards-flex-wrapper {
+.grid-flexer {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-grid {
   width: $content-width;
   display: grid;
-  grid-gap: 2%;
+  grid-gap: 2vw;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-  margin-bottom: 10vh;
+  justify-content: center;
+  align-items: center;
 }
 
 .card-container {
@@ -181,10 +188,12 @@
       font-weight: bold;
       font-size: 24px;
       margin-bottom: 20px;
+      text-align: center;
     }
     h2 {
       font-size: 16px;
       color: $clr-accent;
+      text-align: center;
     }
   }
   button {
@@ -200,6 +209,7 @@
     color: $clr-white;
     font-family: $font-base;
     font-size: $font-size-small;
+    text-align: center;
   }
 }
 
