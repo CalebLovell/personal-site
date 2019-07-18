@@ -38,10 +38,21 @@ footer {
     a {
       text-decoration: none;
       color: $clr-accent;
+      font-weight: bold;
       &:hover {
         color: $clr-accent-dark;
       }
+      &:visited {
+        color: $clr-accent;
+        &:hover {
+          color: $clr-accent-dark;
+        }
+      }
     }
+  }
+  .copyright {
+    position: relative;
+    top: -10px;
   }
 }
 

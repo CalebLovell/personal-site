@@ -32,8 +32,8 @@
 }
 
 .about-container {
-  height: 583px;
-  width: 550px;
+  height: 550px;
+  width: 700px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -50,7 +50,7 @@
   color: $clr-white;
   font-family: $font-head;
   text-transform: uppercase;
-  font-size: $font-size-large;
+  font-size: 60px;
   text-align: center;
   position: relative;
   @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) {
@@ -90,7 +90,7 @@
 
 .profile-subtitle {
   color: $clr-white;
-  font-size: $font-size-med;
+  font-size: 24px;
   font-family: $font-base;
   font-weight: bold;
   text-align: center;
@@ -110,7 +110,7 @@
     color: $clr-white;
     margin-top: 10px;
     font-family: $font-base;
-    font-size: $font-size-small;
+    font-size: $font-size-med;
     line-height: 2rem;
     text-align: center;
     @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) {
@@ -119,6 +119,7 @@
       line-height: 1.2rem;
     }
     span {
+      font-weight: bold;
       color: $clr-accent;
     }
   }

@@ -68,8 +68,9 @@ const Footer = () => {
         >
           here
         </a>{" "}
-        to view on Github. Caleb Lovell &copy; 2019.
+        to view on Github.
       </p>
+      <p className="copyright">Caleb Lovell &copy; 2019.</p>
     </footer>
   )
 }
