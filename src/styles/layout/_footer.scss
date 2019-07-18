@@ -52,6 +52,7 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
+    color: $clr-white;
     background-color: $clr-bg-2;
     &:hover {
       color: $clr-accent;
