@@ -33,7 +33,7 @@ canvas {
     text-align: center;
     line-height: 3rem;
     font-family: $font-head;
-    @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) {
+    @media only screen and (min-device-width: 320px) and (max-device-width: $max-width-media-query) and (-webkit-min-device-pixel-ratio: 2) {
       font-size: 28px;
       line-height: 2rem;
     }
@@ -48,7 +48,7 @@ canvas {
   button {
     font-weight: bold;
     font-family: $font-head;
-    @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) {
+    @media only screen and (min-device-width: 320px) and (max-device-width: $max-width-media-query) and (-webkit-min-device-pixel-ratio: 2) {
       font-size: $font-size-small;
       height: 35px;
       width: auto;
