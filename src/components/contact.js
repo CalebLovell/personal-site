@@ -27,30 +27,40 @@ const Contact = () => {
 
   const handleSubmit = e => {
     e.preventDefault()
-    fetch("/", {
-      method: "POST",
-      headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: encode({ "form-name": "contact", name, email, message }),
-    })
-      .then(() =>
-        Swal.fire({
-          title: "Message Sent",
-          text: "I'll get back to you as soon as possible!",
-          type: "success",
-          confirmButtonText: "OK",
-          confirmButtonColor: "rgb(214, 28, 81)",
-        })
-      )
-      .catch(error =>
-        Swal.fire({
-          title: "Error",
-          text:
-            "Sorry! Something went wrong. You can email me directly at caleblovell1@gmail.com or reach me through one of my social links below. Sorry for the inconvenience!",
-          type: error,
-          confirmButtonText: "OK",
-          confirmButtonColor: "rgb(214, 28, 81)",
-        })
-      )
+    if (name !== `` && email !== `` && message !== ``) {
+      fetch("/", {
+        method: "POST",
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        body: encode({ "form-name": "contact", name, email, message }),
+      })
+        .then(() =>
+          Swal.fire({
+            title: "Message Sent",
+            text: "I'll get back to you as soon as possible!",
+            type: "success",
+            confirmButtonText: "OK",
+            confirmButtonColor: "rgb(214, 28, 81)",
+          })
+        )
+        .catch(error =>
+          Swal.fire({
+            title: "Error",
+            text:
+              "Sorry! Something went wrong. You can email me directly at caleblovell1@gmail.com or reach me through one of my social links below. Sorry for the inconvenience!",
+            type: error,
+            confirmButtonText: "OK",
+            confirmButtonColor: "rgb(214, 28, 81)",
+          })
+        )
+    } else {
+      Swal.fire({
+        title: "Error",
+        text: `Please make sure you have entered a name, email and message before sending.`,
+        type: `error`,
+        confirmButtonText: "OK",
+        confirmButtonColor: "rgb(214, 28, 81)",
+      })
+    }
   }
 
   return (
