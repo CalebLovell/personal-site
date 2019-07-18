@@ -14,7 +14,7 @@ const IndexPage = () => {
         />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="http://www.caleblovell.dev/" />
-        <meta property="og:image" content="sitePreview" />
+        <meta property="og:image" content="www.google.com" />
         <meta
           property="og:description"
           description="Hello! I'm Caleb Lovell. I'm a full-stack web developer."
