@@ -237,9 +237,9 @@ class Home extends Component {
             spy={true}
             smooth={true}
             duration={1000}
-          >
+            >
             <button>
-              View my work{" "}
+              Find out more{" "}
               <FontAwesomeIcon icon={faArrowRight} fixedWidth size="sm" />
             </button>
           </Link>

@@ -37,6 +37,7 @@ const Header = () => {
               spy={true}
               smooth={true}
               duration={1000}
+              offset={10}
             >
               Projects
             </Link>

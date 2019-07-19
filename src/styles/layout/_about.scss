@@ -54,6 +54,7 @@
   font-size: $font-size-title;
   text-align: center;
   position: relative;
+  top: 20px;
   @media only screen and (min-device-width: 320px) and (max-device-width: $max-width-media-query) and (-webkit-min-device-pixel-ratio: 2) {
     font-size: 36px;
   }
