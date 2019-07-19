@@ -1,34 +1,57 @@
 import React from "react"
-import { Link } from "gatsby"
-
-// import { navigate } from "@reach/router"
+import { Link } from "react-scroll"
 
 const Header = () => {
-  //   const changeView = () => {
-  //     navigate("#about")
-  //   }
-  // onClick={() => {
-  //   changeView()
-  // }}
-
   return (
     <header>
       <nav>
         <ul>
           <li>
-            <Link to="#home">Home</Link>
+            <Link
+              to="home"
+              activeClass="active"
+              spy={true}
+              smooth={true}
+              duration={1000}
+            >
+              Home
+            </Link>
           </li>
           <li className="link-divider"></li>
           <li>
-            <Link to="#about">About</Link>
+            <Link
+              to="about"
+              activeClass="active"
+              spy={true}
+              smooth={true}
+              duration={1000}
+            >
+              About
+            </Link>
           </li>
           <li className="link-divider"></li>
           <li>
-            <Link to="#projects">Projects</Link>
+            <Link
+              to="projects"
+              activeClass="active"
+              spy={true}
+              smooth={true}
+              duration={1000}
+            >
+              Projects
+            </Link>
           </li>
           <li className="link-divider"></li>
           <li>
-            <Link to="#contact">Contact</Link>
+            <Link
+              to="contact"
+              activeClass="active"
+              spy={true}
+              smooth={true}
+              duration={1000}
+            >
+              Contact
+            </Link>
           </li>
         </ul>
       </nav>

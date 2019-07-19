@@ -1,5 +1,5 @@
 import React, { Component, createRef } from "react"
-import { Link } from "gatsby"
+import { Link } from "react-scroll"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons"
 
@@ -228,9 +228,16 @@ class Home extends Component {
         </div>
         <div className="intro-container">
           <h1>
-            Hello! I'm <span>Caleb Lovell</span>.<br /> I'm a full-stack web developer.
+            Hello! I'm <span>Caleb Lovell</span>.<br /> I'm a full-stack web
+            developer.
           </h1>
-          <Link to="#about">
+          <Link
+            to="about"
+            activeClass="active"
+            spy={true}
+            smooth={true}
+            duration={1000}
+          >
             <button>
               View my work{" "}
               <FontAwesomeIcon icon={faArrowRight} fixedWidth size="sm" />

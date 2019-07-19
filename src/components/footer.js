@@ -1,5 +1,5 @@
 import React from "react"
-import { Link } from "gatsby"
+import { Link } from "react-scroll"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faAngleDoubleUp } from "@fortawesome/free-solid-svg-icons"
 import {
@@ -12,7 +12,13 @@ import {
 const Footer = () => {
   return (
     <footer>
-      <Link to="#home">
+      <Link
+        to="home"
+        activeClass="active"
+        spy={true}
+        smooth={true}
+        duration={1500}
+      >
         <button className="scroll-up" title="Back to top">
           <FontAwesomeIcon icon={faAngleDoubleUp} size="lg" />
         </button>
