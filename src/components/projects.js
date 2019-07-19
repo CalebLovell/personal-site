@@ -88,7 +88,7 @@ const Projects = () => {
             <div className="slider-description-bottom">
               <button>
                 <a href={`${link}`} target="_blank" rel="noopener noreferrer">
-                  View Live Site
+                  Visit Live Site!
                 </a>
               </button>
               <FontAwesomeIcon
