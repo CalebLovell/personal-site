@@ -2,9 +2,10 @@
   height: calc(100vh + #{$clip-path-hack-margin});
   width: 100%;
   display: grid;
+  grid-template-columns: 1fr;
   grid-template-rows: 15vh 85vh;
   align-items: flex-end;
-  justify-content: center;
+  justify-items: center;
   background-color: $clr-bg-2;
   margin-bottom: -$clip-path-hack-margin;
   @media only screen and (min-device-width: 320px) and (max-device-width: $max-width-media-query) and (-webkit-min-device-pixel-ratio: 2) {
@@ -19,10 +20,10 @@
 }
 
 .flex-container {
-  width: 100%;
+  width: $content-width;
   height: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   @media only screen and (min-device-width: 320px) and (max-device-width: $max-width-media-query) and (-webkit-min-device-pixel-ratio: 2) {
     height: auto;
@@ -33,7 +34,7 @@
 
 .about-container {
   height: 550px;
-  width: 700px;
+  width: 550px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -90,7 +91,7 @@
 
 .profile-subtitle {
   color: $clr-white;
-  font-size: 24px;
+  font-size: $font-size-med;
   font-family: $font-base;
   font-weight: bold;
   text-align: center;
@@ -110,7 +111,7 @@
     color: $clr-white;
     margin-top: 10px;
     font-family: $font-base;
-    font-size: $font-size-med;
+    font-size: $font-size-small;
     line-height: 2rem;
     text-align: center;
     @media only screen and (min-device-width: 320px) and (max-device-width: $max-width-media-query) and (-webkit-min-device-pixel-ratio: 2) {
