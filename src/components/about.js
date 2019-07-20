@@ -30,7 +30,7 @@ const About = () => {
               passion for making interactive applications and data
               visualizations. I am a voracious learner and love to teach myself
               new things. In my free time you can find me reading, discussing
-              politics or enjoying the ourdoors!
+              politics or enjoying the outdoors!
             </p>
           </div>
         </div>
