@@ -19,8 +19,8 @@ const IndexPage = () => {
         <meta name="twitter:title" content="Caleb Lovell's Dev Portfolio" />
         <meta name="twitter:description" content="Hello! I'm Caleb Lovell. I'm a full-stack web developer."/>
         <meta name="twitter:image" content={ss}/>
-        <meta name="twitter:image:width" content= "120" />
-        <meta name="twitter:image:height" content= "120" />
+        {/* <meta name="twitter:image:width" content= "120" /> */}
+        {/* <meta name="twitter:image:height" content= "120" /> */}
         <meta name="twitter:image:alt" content="Home View of Portfolio"></meta>
       </Helmet>
       <Layout />
