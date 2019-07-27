@@ -1,5 +1,7 @@
 import React from "react"
 
+// CURRENTLY UNUSED COMPONENT //
+
 const Technologies = () => {
   return (
     <div className="technologies">
