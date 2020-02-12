@@ -61,21 +61,21 @@ const Bars = () => {
         </div>
         <div className="skill-container">
           <div className="skill-bar">
-            <div className="skill-title">PostgreSQL</div>
-            <div className="skill-exp">
-              <div className="skill-fill postgresql" />
-            </div>
-          </div>
-          <span>80%</span>
-        </div>
-        <div className="skill-container">
-          <div className="skill-bar">
             <div className="skill-title">Node.js</div>
             <div className="skill-exp">
               <div className="skill-fill node" />
             </div>
           </div>
           <span>75%</span>
+        </div>
+        <div className="skill-container">
+          <div className="skill-bar">
+            <div className="skill-title">PostgreSQL</div>
+            <div className="skill-exp">
+              <div className="skill-fill postgresql" />
+            </div>
+          </div>
+          <span>80%</span>
         </div>
       </div>
       <div className="bars-div">
