@@ -26,11 +26,11 @@ const About = () => {
           </h2>
           <div className="profile-description">
             <p>
-              I'm a full-stack <span>web developer</span> with a particular
-              passion for making interactive applications and data
-              visualizations. I am a voracious learner and love to teach myself
-              new things. In my free time you can find me reading, discussing
-              politics or enjoying the outdoors!
+              I'm a full-stack <span>web developer</span> with over a year
+              of experience in both front and back-end development. I am a
+              voracious learner and love to teach myself new things. In my
+              free time you can find me reading, discussing politics or 
+              enjoying the outdoors!
             </p>
           </div>
         </div>
