@@ -66,7 +66,7 @@ const Footer = () => {
         </a>
       </div>
       <p>
-        Custom Made with Gatsby, HTML5 Canvas, React and SASS. Click{" "}
+        <u>Custom Made</u> with Gatsby, HTML5 Canvas, React and SASS. Click{" "}
         <a
           href={`https://github.com/CalebLovell/personal-site`}
           target="_blank"
@@ -76,7 +76,7 @@ const Footer = () => {
         </a>{" "}
         to view on Github.
       </p>
-      <p className="copyright">Caleb Lovell &copy; 2019.</p>
+      <p className="copyright">Caleb Lovell &copy; 2020</p>
     </footer>
   )
 }
