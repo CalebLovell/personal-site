@@ -86,11 +86,11 @@ const Projects = () => {
               <p>{description}</p>
             </div>
             <div className="slider-description-bottom">
-              <button>
+              {/* <button>
                 <a href={`${link}`} target="_blank" rel="noopener noreferrer">
                   Visit Live Site!
                 </a>
-              </button>
+              </button> */}
               <FontAwesomeIcon
                 icon={faTimes}
                 size="lg"
