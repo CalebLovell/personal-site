@@ -12,7 +12,7 @@ const Bars = () => {
               <div className="skill-fill html" />
             </div>
           </div>
-          <span>80%</span>
+          <span>100%</span>
         </div>
         <div className="skill-container">
           <div className="skill-bar">
@@ -30,7 +30,7 @@ const Bars = () => {
               <div className="skill-fill javascript" />
             </div>
           </div>
-          <span>80%</span>
+          <span>85%</span>
         </div>
         <div className="skill-container">
           <div className="skill-bar">
@@ -39,25 +39,25 @@ const Bars = () => {
               <div className="skill-fill react" />
             </div>
           </div>
+          <span>80%</span>
+        </div>
+        <div className="skill-container">
+          <div className="skill-bar">
+            <div className="skill-title">React Native</div>
+            <div className="skill-exp">
+              <div className="skill-fill react-native" />
+            </div>
+          </div>
           <span>70%</span>
         </div>
         <div className="skill-container">
           <div className="skill-bar">
-            <div className="skill-title">D3.js</div>
+            <div className="skill-title">Firebase</div>
             <div className="skill-exp">
-              <div className="skill-fill d3" />
+              <div className="skill-fill firebase" />
             </div>
           </div>
-          <span>60%</span>
-        </div>
-        <div className="skill-container">
-          <div className="skill-bar">
-            <div className="skill-title">Gatsby</div>
-            <div className="skill-exp">
-              <div className="skill-fill gatsby" />
-            </div>
-          </div>
-          <span>50%</span>
+          <span>70%</span>
         </div>
         <div className="skill-container">
           <div className="skill-bar">
@@ -66,7 +66,7 @@ const Bars = () => {
               <div className="skill-fill postgresql" />
             </div>
           </div>
-          <span>70%</span>
+          <span>80%</span>
         </div>
         <div className="skill-container">
           <div className="skill-bar">
@@ -75,7 +75,7 @@ const Bars = () => {
               <div className="skill-fill node" />
             </div>
           </div>
-          <span>60%</span>
+          <span>75%</span>
         </div>
       </div>
       <div className="bars-div">
