@@ -14,7 +14,7 @@ const IndexPage = () => {
 				<meta property='og:type' content='website' />
 				<meta property='og:image' content={`../../static/portfolio-screenshot.png`} />
 				<meta property='og:image:alt' content='Home View of Portfolio' />
-				<meta name='twitter:card' content='summary_large_image' />
+				<meta name='twitter:card' content='summary' />
 				<meta name='twitter:site' content='@Caleb__Lovell' />
 				<meta name='twitter:title' content="Caleb Lovell's Dev Portfolio" />
 				<meta name='twitter:description' content="Hello! I'm Caleb Lovell. I'm a full-stack web developer." />
