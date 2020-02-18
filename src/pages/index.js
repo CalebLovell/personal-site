@@ -18,7 +18,7 @@ const IndexPage = () => {
 				<meta name='twitter:site' content='@Caleb__Lovell' />
 				<meta name='twitter:title' content="Caleb Lovell's Dev Portfolio" />
 				<meta name='twitter:description' content="Hello! I'm Caleb Lovell. I'm a full-stack web developer." />
-				<meta name='twitter:image' content={`https://via.placeholder.com/1280x630`} />
+				<meta name='twitter:image' content={`../../static/portfolio-screenshot.png`} />
 				<meta name='twitter:image:alt' content='Home View of Portfolio'></meta>
 			</Helmet>
 			<Layout />
