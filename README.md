@@ -1,1 +1,1 @@
-Caleb's Lovell Personal Site & Portfolio.
+Caleb's Lovell Personal Site & Portfolio. Custom made with Gatsby, React, SASS & HTML5 Canvas.
